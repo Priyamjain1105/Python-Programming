@@ -2,7 +2,7 @@
 To represent data and method 
 # Class 
 Blueprint for declaring and creationg objects
-`class name`
+`class Student`
 # Object 
 Instance of the class
 ```
