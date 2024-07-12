@@ -18,7 +18,7 @@ Notes
 1. Class name should be capital
 
 ## Constructor _ _ init _ _ Funtion
-A class have a __init__ function, which is always executed when the object is being intiated.
+A class have a __init__ function, which is always executed when the object is being intiated.  
 Default Constructor
 ```
 class Student:
@@ -39,3 +39,18 @@ Notes:
 3. self is always the first paramenter in the constructor
 3. self is used to access the variables of the class
 4.  a class can have more than one constructor
+
+## Class & Instances Attributes
+1. Class Attribute: the values which we do not want to change for many objects
+2. Object Attribute the values which we want unique for every object
+```
+class Student:
+      college = "VIT Bhopal"            # Class Attribute
+      def __init__ (self, name, marks)  # Object Attribute
+                   self.name = name
+                   self.marks = marks
+
+      s1 = Student("Priyam",17)
+      s2 = Student("Sanket",20)
+     
+```
