@@ -98,6 +98,19 @@ class Student:
           self.name - name
 
       def welcome(self):
-          return marks
+          print(self.name)
+          return self.marks
 ```
+### Static Methods
+The functions that are not using the object(self) values are static methods, these function dont have self parameter
+```
+class Student:
+      @staticmethod   #decorater
+      def college():
+           print("ABC College")
+```
+Decorater: modifies the property of the function,(temporarily) 
+it allow us to wrap another function in order to extend the behaviour of the wrapped function, without permanently modifying it.
+
+
 
