@@ -109,8 +109,17 @@ class Student:
       def college():
            print("ABC College")
 ```
-Decorater: modifies the property of the function,(temporarily) 
+**Decorater:** modifies the property of the function,(temporarily) 
 it allow us to wrap another function in order to extend the behaviour of the wrapped function, without permanently modifying it.
+
+
+# FOUR PILLARS OF OOP'S [AEIP]
+# Abstraction 
+Hiding the implementation detail of a class and only showing the essential features to the user
+# Encapsulation
+# Inheritance
+
+
 
 
 
