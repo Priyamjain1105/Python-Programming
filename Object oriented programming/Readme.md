@@ -43,6 +43,7 @@ Notes:
 ## Class & Instances Attributes
 1. **Class Attribute:** the values which we do not want to change for many objects
 2. **Object Attribute:** the values which we want unique for every object
+They both are similar to global variable, major differnece is class attribute is same for all objects and object attricbute is unique to every object
 ```
 class Student:
       college = "VIT Bhopal"            # Class Attribute
@@ -56,12 +57,39 @@ class Student:
 ```
 Note:
 1. When there is same name class and object attribute then precedence of object attribute is more than class attribute
+Modifying Class Attribute and Object attribute
+```
+class Example:
+    class_attribute = "I am a class attribute"
+
+    def __init__(self, value):
+        self.instance_attribute = value  # Instance attribute
+
+# Creating instances
+example1 = Example(10)
+example2 = Example(20)
+
+# Accessing class attribute (Directly)
+print(Example.class_attribute)  # Outputs: I am a class attribute
+# Modifying class attribute using class name
+Example.class_attribute = "Modified class attribute"
+
+# Modifying class attribute using instance (creates an instance attribute with the same name)(Through Instance)
+example1.class_attribute = "Instance specific attribute"
+
+# Accessing instance attributes
+print(example1.instance_attribute)  # Outputs: 10
+print(example2.instance_attribute)  # Outputs: 20
+
+```
+
+
 
 ## Methods
 Functions when used in class is called methods  
-Creating methid in class
+Creating method in class
 ```
-class Student
+class Student:
       def __init__(self,marks,name):
           self.marks = marks
           self.name - name
