@@ -17,7 +17,7 @@ print(s1)
 Notes  
 1. Class name should be capital
 
-## Constructor _ _ init _ _ Funtion
+## Constructor (_ _ init _ _ Funtion)
 A class have a __init__ function, which is always executed when the object is being intiated.  
 Default Constructor
 ```
