@@ -41,8 +41,8 @@ Notes:
 4.  a class can have more than one constructor
 
 ## Class & Instances Attributes
-1. Class Attribute: the values which we do not want to change for many objects
-2. Object Attribute the values which we want unique for every object
+1. **Class Attribute:** the values which we do not want to change for many objects
+2. **Object Attribute:** the values which we want unique for every object
 ```
 class Student:
       college = "VIT Bhopal"            # Class Attribute
