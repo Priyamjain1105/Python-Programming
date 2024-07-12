@@ -3,7 +3,7 @@ Funtions were created for re-useablity of code and decresing reduntancy
 And similarly for increaseing the reduntancy of the code we have OOP's
 
 # Class & Object in Python
-Class is a blueprint for creating objects
+Class is a blueprint for creating objects, collection of attributes and methods.
 Creating Class  
 ```
 class Student:
@@ -46,11 +46,27 @@ Notes:
 ```
 class Student:
       college = "VIT Bhopal"            # Class Attribute
-      def __init__ (self, name, marks)  # Object Attribute
-                   self.name = name
+      def __init__ (self, name, marks) 
+                   self.name = name     # Object Attribute
                    self.marks = marks
-
+           
       s1 = Student("Priyam",17)
       s2 = Student("Sanket",20)
      
 ```
+Note:
+1. When there is same name class and object attribute then precedence of object attribute is more than class attribute
+
+## Methods
+Functions when used in class is called methods  
+Creating methid in class
+```
+class Student
+      def __init__(self,marks,name):
+          self.marks = marks
+          self.name - name
+
+      def welcome(self):
+          return marks
+```
+
