@@ -42,9 +42,10 @@ Notes:
 
 ## Class & Instances Attributes
 1. **Class Attribute:** the values which we do not want to change for many objects
-2. **Object Attribute:** the values which we want unique for every object
+2. **Object Attribute:** the values which we want unique for every object  
 <br>
-s
+They both are similar to global variable, major differnece is class attribute is same for all objects and object attricbute is unique to every object
+
 
 ```
 class Student:
