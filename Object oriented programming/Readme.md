@@ -90,7 +90,12 @@ print(example2.instance_attribute)  # Outputs: 20
 
 ## Methods
 Functions when used in class is called methods  
-Creating method in class
+Types:
+**1. Static Method:** Method in which neither self is used, nor any changesa are made
+**2. Class Method:** Method in which we want to make changes in class attributes
+**3. Instance Method:** Method with self attribute
+
+Creating instance method in class
 ```
 class Student:
       def __init__(self,marks,name):
@@ -223,10 +228,48 @@ car2 = ToyotaCar("Prius")
    `Super()` method is used to access methods of the parent class.  
    Sometimes we have to change the values in parent class through child class,or access methods from child class, to do that we have Super Method
 
+Example Calling the super constructor (parent class constructor)
+```
+class ToyotaCar(self,name,type):
+      super().__init__(type)
+      self.name = name
+```
+## Class Method
+A class method is bound to the class & receives the class as an implict first argument
+Ways of changing the values of class Attributes
+1.Through class keyword
+```
+class Person:
+      name = 'anonymous`
+
+      def changeName(self. name):
+          Person.name = name
+```
+2. Through class keyword
+```
+class Person:
+      name = 'anonymous`
+
+      def changeName(self. name):
+          self.__class__.name = name
+```
+`p1 = Person`  
+`p1.changeName("rahul kumar")`
+
+3. Through class method
+   ```
+   @classmethod
+   def changeName(cls,name):
+       cls.name = name
+   ```
+
 # Important Keywords
 1. Delete attribute:  `del s1.name` | Delete object:  `del s1`
 
-
+# Decorator
+1. `@staticmethod`: makes a method static
+2. `@classmethod`: makes the method class method
+3. `@property`:
 
 
 
