@@ -269,7 +269,28 @@ class Person:
 # Decorator
 1. `@staticmethod`: makes a method static
 2. `@classmethod`: makes the method class method
-3. `@property`:
+3. `@property`/attribute: when one attribute depends on another attributes, and (changing the value of one wont change the value of another)
+so when we cannot give any fixed value to attribute then its value will depende on any method, to use the method as an attribute
+```
+class Student:
+      def __init__(self,phy,chem,math):
+          self.phy = phy
+          self.chem = chem
+          self.math = math
+
+      # percentage function will act like attribute, but is function returning the value
+      @property
+      def percentage(self):
+           self.percentage = str((self.phy  + self.chem + self.math))/3)+"%"
+
+stu1 = Student(98,97,99)
+
+stu1.phy = 86
+print(stu.phy)
+print(stu1.percentage)
+```
+
+
 
 
 
