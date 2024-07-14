@@ -164,7 +164,7 @@ a1.debit(1,450)
 ```
 # Inheritance
 # Important Keywords
-1. Delete Keyword `del s1.name`
+1. Delete attribute: `del s1.name` | Delete object: `del s1`
 
 
 
