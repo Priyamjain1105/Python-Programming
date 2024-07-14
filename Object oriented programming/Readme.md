@@ -132,6 +132,20 @@ car1 = Car()
 Car1.start()
 ```
 output: `Car Started...`
+#### Private (like) Attributes and Methods (__pvt)
+Private attributes & methods are meant to be used only within the class and are not accessible from outside the class.   
+
+1. Private attributes : using two underscores (_ _) before the var
+   `__self.accpasswd = acc_pass`
+2. Private method : using two underscores (_ _) before the function name
+   ```
+   def __transaction(ano,bal):
+        print("Performs Transaction")
+   ```
+Note: In python we conceptually implement private, they are not reallhy private
+       
+
+
 
 # Encapsulation (Capsule)
 Wrapping data and function into a single unit (object).
@@ -164,7 +178,7 @@ a1.debit(1,450)
 ```
 # Inheritance
 # Important Keywords
-1. Delete attribute: `del s1.name` | Delete object: `del s1`
+1. Delete attribute:  `del s1.name` | Delete object:  `del s1`
 
 
 
