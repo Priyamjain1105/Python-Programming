@@ -265,13 +265,44 @@ class Person:
 
 # Polymorphism (Many-Forms/Anak-Ekum)
 ### Operator Overloading
-When the same Operator is allowed to have different forms/meaning/usuage according to the context
+When the same Operator is allowed to have different forms/meaning/usuage according to the context.
 ```
 print(1+2)                # 3         used for adding int (defined in class int)
 print("Pri" + "yam")      # Priyam    used for adding string  (defined in class string)
 print([1,2,3] + [3,4,5])  # merge     used for adding  list (defined in class list)
 ```
+**HOW CAN WE DO THAT**  
+**Dunder functions:** defining the operation of symmbol according to ur class.  
+`a+b #addition a.__add__(b)`
+```
+class Complex:
+      def __init__(self,real,img):
+          self.real = real
+          self.img = img
 
+      def showNumber(self):
+          print(self.real,"i+",self.img,"j")
+
+      def __add__(self,num2):
+          newReal = self.real + num2.real
+          newImg = self.img + num2.img
+          return Complex(newReal,newImg)
+
+       def __sub__(self,num2):
+           newReal = self.real - num2.real
+           newImg = self.img - num2.img
+           return Complex(newReal,NewImg)
+
+num1 = Complex(1,3)
+num1.shownumber()
+
+num2 = Complex(2,4)
+num2.shownumber()
+
+num1.add(num2)
+#with + sign
+print(num1+num2)
+```
 
 # Important Keywords
 1. Delete attribute:  `del s1.name` | Delete object:  `del s1`
