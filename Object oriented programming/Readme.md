@@ -147,16 +147,24 @@ class Account():
       def credit(self,ano,amt):
           self.bal = slef.bal+amt
           print("Money Credited Succesfully")
+          self.get_balance()
 
       def  debit(self,ano,amt):
            self.bal = self.bal-amt
-            print("Money Debited Succesfullt")
+           print("Money Debited Succesfully")
+           self.get_balance()
+       
+      def get_balance():
+          print("A.no:",self.ano,"\nBalance:",self.bal")
+     
 a1 = Account(1,200)
 a1.credit(1,900)
 a1.debit(1,450)
           
 ```
 # Inheritance
+# Important Keywords
+1. Delete Keyword `del s1.name`
 
 
 
