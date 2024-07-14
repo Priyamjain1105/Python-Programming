@@ -116,6 +116,22 @@ it allow us to wrap another function in order to extend the behaviour of the wra
 # FOUR PILLARS OF OOP'S [AEIP]
 # Abstraction 
 Hiding the implementation detail of a class and only showing the essential features to the user
+Example Stating Automated Car
+```
+class Car():
+      def __init__(self):
+          self.acc = False
+          self.brake = False
+          self.clutch = False
+
+      def Start(self):
+          self.acc = True
+          self.acc = True
+          print("Car Started...")
+car1 = Car()
+Car1.start()
+```
+output: `Car Started...`
 # Encapsulation
 # Inheritance
 
