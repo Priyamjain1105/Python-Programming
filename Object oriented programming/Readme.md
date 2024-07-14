@@ -115,7 +115,7 @@ it allow us to wrap another function in order to extend the behaviour of the wra
 
 # FOUR PILLARS OF OOP'S [AEIP]
 # Abstraction 
-Hiding the implementation detail of a class and only showing the essential features to the user
+Hiding the implementation detail of a class and only showing the essential features to the user  
 Example Stating Automated Car
 ```
 class Car():
@@ -132,7 +132,30 @@ car1 = Car()
 Car1.start()
 ```
 output: `Car Started...`
-# Encapsulation
+
+# Encapsulation (Capsule)
+Wrapping data and function into a single unit (object).
+
+### Question
+Create Account class with 2 attributes - balance and account no. Create Methods for debit, credit and printing the balance.
+```
+class Account():
+      def __init__(self,ano,bal):
+          self.ano = ano
+          self.bal = bal
+
+      def credit(self,ano,amt):
+          self.bal = slef.bal+amt
+          print("Money Credited Succesfully")
+
+      def  debit(self,ano,amt):
+           self.bal = self.bal-amt
+            print("Money Debited Succesfullt")
+a1 = Account(1,200)
+a1.credit(1,900)
+a1.debit(1,450)
+          
+```
 # Inheritance
 
 
