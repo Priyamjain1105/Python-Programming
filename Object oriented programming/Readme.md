@@ -90,10 +90,10 @@ print(example2.instance_attribute)  # Outputs: 20
 
 ## Methods
 Functions when used in class is called methods  
-Types:
-**1. Static Method:** Method in which neither self is used, nor any changesa are made
-**2. Class Method:** Method in which we want to make changes in class attributes
-**3. Instance Method:** Method with self attribute
+Types:  
+**1. Static Method:** Method in which neither self is used, nor any changesa are made  
+**2. Class Method:** Method in which we want to make changes in class attributes  
+**3. Instance Method:** Method with self attribute  
 
 Creating instance method in class
 ```
@@ -212,7 +212,7 @@ car2 = ToyotaCar("Prius")
    car1 = Fortuner("disel")
    car1.start() 
 ```
-### 3. Multiple Inheritance: `class derived from multiple classes`
+#### 3. Multiple Inheritance: `class derived from multiple classes`
    ```
    class A:
         varA = "welcome to class A"
@@ -224,7 +224,7 @@ car2 = ToyotaCar("Prius")
          varC = "welcome to class C"
    
    ```
-## Super Method
+### Super Method
    `Super()` method is used to access methods of the parent class.  
    Sometimes we have to change the values in parent class through child class,or access methods from child class, to do that we have Super Method
 
@@ -234,7 +234,7 @@ class ToyotaCar(self,name,type):
       super().__init__(type)
       self.name = name
 ```
-## Class Method
+### Class Method
 A class method is bound to the class & receives the class as an implict first argument
 Ways of changing the values of class Attributes
 1.Through class keyword
@@ -263,6 +263,16 @@ class Person:
        cls.name = name
    ```
 
+# Polymorphism (Many-Forms/Anak-Ekum)
+### Operator Overloading
+When the same Operator is allowed to have different forms/meaning/usuage according to the context
+```
+print(1+2)                # 3         used for adding int (defined in class int)
+print("Pri" + "yam")      # Priyam    used for adding string  (defined in class string)
+print([1,2,3] + [3,4,5])  # merge     used for adding  list (defined in class list)
+```
+
+
 # Important Keywords
 1. Delete attribute:  `del s1.name` | Delete object:  `del s1`
 
@@ -289,6 +299,8 @@ stu1.phy = 86
 print(stu.phy)
 print(stu1.percentage)
 ```
+4. `@getter`
+5. `@setter`
 
 
 
