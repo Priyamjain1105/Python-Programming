@@ -132,7 +132,7 @@ car1 = Car()
 Car1.start()
 ```
 output: `Car Started...`
-#### Private (like) Attributes and Methods (__pvt)
+### Private (like) Attributes and Methods (__pvt)
 Private attributes & methods are meant to be used only within the class and are not accessible from outside the class.   
 
 1. Private attributes : using two underscores (_ _) before the var
@@ -177,6 +177,22 @@ a1.debit(1,450)
           
 ```
 # Inheritance
+When one class derives the property of another class.
+```
+class Car:              # Parent Class
+      @staticmethod
+      def start():
+          print("Car Started...")
+
+      @staticmethod
+      def stop():
+           print("Car Stopped...")
+
+class Toyota_Car(Car):  #  Deriving the properties from parent class
+       ...
+        
+```
+
 # Important Keywords
 1. Delete attribute:  `del s1.name` | Delete object:  `del s1`
 
