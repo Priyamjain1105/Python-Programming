@@ -188,8 +188,12 @@ class Car:              # Parent Class
       def stop():
            print("Car Stopped...")
 
-class Toyota_Car(Car):  #  Deriving the properties from parent class
-       ...
+class ToyotaCar(Car):  #  Deriving the properties from parent class
+       def __intit__(self,name):
+           self.name = name
+car1 = ToyotaCar("Fortuner")
+car2 = ToyotaCar("Prius")
+
         
 ```
 
