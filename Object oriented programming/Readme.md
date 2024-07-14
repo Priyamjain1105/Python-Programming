@@ -188,7 +188,7 @@ class Car:              # Parent Class
       def stop():
            print("Car Stopped...")
 
-class ToyotaCar(Car):  #  Deriving the properties from parent class
+class ToyotaCar(Car):     # Child Class
        def __intit__(self,name):
            self.name = name
 car1 = ToyotaCar("Fortuner")
@@ -196,6 +196,29 @@ car2 = ToyotaCar("Prius")
 
         
 ```
+## Types of Inheritance
+1. Single Inheritance: `One base class -> one derive class`
+2. Multi-Level Inheritance: `parent_class -> child -> grand_child`
+    ```
+   class Fortuner(Toyota_Car):
+         def __intit__(self,type):
+            self.type = type
+   
+   car1 = Fortuner("disel")
+   car1.start() 
+   ```
+3. Multiple Inheritance: `class derived from multiple classes`
+   ```
+   class A:
+        varA = "welcome to class A"
+
+   class B:
+         varB = "Welcome to class B"
+   
+   class C(A,B):
+         varC = "welcome to class C"
+   
+   ```
 
 # Important Keywords
 1. Delete attribute:  `del s1.name` | Delete object:  `del s1`
