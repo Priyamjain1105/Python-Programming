@@ -197,17 +197,17 @@ car2 = ToyotaCar("Prius")
         
 ```
 ## Types of Inheritance
-1. Single Inheritance: `One base class -> one derive class`
-2. Multi-Level Inheritance: `parent_class -> child -> grand_child`
-    ```
+#### 1. Single Inheritance: `One base class -> one derive class`
+#### 2. Multi-Level Inheritance: `parent_class -> child -> grand_child`
+```
    class Fortuner(Toyota_Car):
          def __intit__(self,type):
             self.type = type
    
    car1 = Fortuner("disel")
    car1.start() 
-   ```
-3. Multiple Inheritance: `class derived from multiple classes`
+```
+### 3. Multiple Inheritance: `class derived from multiple classes`
    ```
    class A:
         varA = "welcome to class A"
@@ -219,6 +219,9 @@ car2 = ToyotaCar("Prius")
          varC = "welcome to class C"
    
    ```
+## Super Method
+   `Super()` method is used to access methods of the parent class.  
+   Sometimes we have to change the values in parent class through child class,or access methods from child class, to do that we have Super Method
 
 # Important Keywords
 1. Delete attribute:  `del s1.name` | Delete object:  `del s1`
