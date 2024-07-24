@@ -74,7 +74,12 @@ FOR FUNCTION
 2. Protected: Only shared with friend class/ and folloed 
 3. Private:
 
-
-
+# Abstract
+```python
+class demo(abc):
+       @abstractmethod
+       def example(self):
+           print("Hello")
+```
    
 
