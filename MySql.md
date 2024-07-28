@@ -1,5 +1,5 @@
 # MySql integration with Python
-```
+```python
 import pymysql
 con = pymysql.connect(host = 'localhost', user = 'root', password = 'arunrockstar',database = 'l')
 
