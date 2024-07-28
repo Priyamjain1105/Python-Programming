@@ -65,7 +65,7 @@ Object contains the file address and the operation that we have to perform on th
     
 
 # Text files
-- ## reading in the text files
+- ## Reading in the text files
     ```python
     f = open(r'd:\\new folder\\list.txt')
     result = f.read()
@@ -89,7 +89,7 @@ Object contains the file address and the operation that we have to perform on th
        ```
 
 
-  - ## writing in the text files
+- ## Writing in the text files
     1. Write function
         ```python
            f = open('d:\\New Folder\\list.txt','w')
@@ -103,11 +103,14 @@ Object contains the file address and the operation that we have to perform on th
        f.writelines(tasks)
        ```
 
-### Strip function
-`strip()`: removes the given character from both ends
-`lstrip()`: removes the given character from leading end/left(left end).
-`rstrip()`: removes the given character from trailing end/right(right end)
+    ### Strip function
+    `strip()`: removes the given character from both ends
+    `lstrip()`: removes the given character from leading end/left(left end).
+    `rstrip()`: removes the given character from trailing end/right(right end)
 
-### file Pointer
-``
+    ### file Pointer
+
+
+# Binary Files
+
 
