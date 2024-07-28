@@ -116,15 +116,73 @@ Using pickle module
 `import pickle`
  - ## Reading in the binary files
    ```python
-   f = open('file2.dat','rb')
-   q  = pickle.load(b)
-   print(q)
-   f.close()
+    global fb
+    f = open(fb,"rb")
+    try:
+        while True:
+            
+            rec = pickle.load(f)
+            print(rec)
+    except EOFError:
+        print("ALL RECORDS PRINTED")
+        f.close()
+        
    ```
  - ## Writing in the binary files
     ```python
     rec  = [sno,name,phoneno]
     pickle.dump(rec,f)
+
+ - ## Deleting from the binary files
+   ```
+    fb = "file.dat"
+    ft = "temp.dat"
+    f = open(fb,"rb")
+    f2 = open(ft,"ab")
+    try:
+        while True:
+            rec = pickle.load(f)
+            if rec[0] == sno:
+                continue
+            else:
+                pickle.dump(rec,f2)
+    except EOFError:
+       print("RECORD DELETED,NOW THE PERSON MAY NOT BE ABLE TO EXIT THE PARKING")
+       f.close()
+       f2.close()
+       os.remove(fb)
+       os.rename(ft,fb)
+
+   ```
+- # Updating in the binary file
+  ```
+  def update():
+    global fb,ft
+    print("RECORDS CAN ONLY BE UPDATED UNTIL CAR IS PARKED NOT AFTER THE EXIT")
+    sno = int(input("Enter the sno you want to update"))
+    f = open(fb,"rb")
+    f2 = open(ft,"ab")
+    try:
+        while True:
+            rec = pickle.load(f)
+            if rec[0] == sno:
+                print(rec)
+                name = input("ENTER NEW NAME")
+                rec[1] = name
+                pno = int(input("Enter Phoneno"))
+                rec[2] = pno
+                pickle.dump(rec,f2)
+            else:
+                pickle.dump(rec,f2)
+    except EOFError:
+       print("RECORD UPDATED")
+       f.close()
+       f2.close()
+       os.remove(fb)
+       os.rename(ft,fb)
+
+  
+  ```
 
  # CSV Files
    `import csv`
