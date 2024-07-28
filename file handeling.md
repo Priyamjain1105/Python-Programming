@@ -134,7 +134,7 @@ Using pickle module
     pickle.dump(rec,f)
 
  - ## Deleting from the binary files
-   ```
+   ```python
     fb = "file.dat"
     ft = "temp.dat"
     f = open(fb,"rb")
@@ -155,7 +155,7 @@ Using pickle module
 
    ```
 - # Updating in the binary file
-  ```
+  ```python
   def update():
     global fb,ft
     print("RECORDS CAN ONLY BE UPDATED UNTIL CAR IS PARKED NOT AFTER THE EXIT")
