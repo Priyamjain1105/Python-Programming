@@ -114,22 +114,22 @@ Object contains the file address and the operation that we have to perform on th
 # Binary Files
 Using pickle module
 `import pickle`
- - # Reading in the binary files
+ - ## Reading in the binary files
    ```python
    f = open('file2.dat','rb')
    q  = pickle.load(b)
    print(q)
    f.close()
    ```
- - # Writing in the binary files
+ - ## Writing in the binary files
     ```python
     rec  = [sno,name,phoneno]
     pickle.dump(rec,f)
 
  # CSV Files
    `import csv`
-   - # reading in the CSV file
-     ```
+   - ## reading in the CSV file
+     ```python
      f = open('file.csv','r')
      b = csv.reader(f,delimiter = ',')
      print(next(b))
@@ -139,5 +139,15 @@ Using pickle module
          print(i)
      
      ```
+  - ## Writing in the CSV files
+    ```python
+    f = open('list.csv','w',newline = '')
+    b = csv.writer(a,delimiter = ',')
+    b.writerow(['Panda','B&W'])
+    b.writerow(['Bear','brown'])
+             #or
+    for i in l:
+        b.writerow(i)
+    ```
 
 
