@@ -102,15 +102,42 @@ Object contains the file address and the operation that we have to perform on th
        tasks = ['gym','chapter 3','water plants','dog's walk']
        f.writelines(tasks)
        ```
-
-    ### Strip function
+       
+- ## Strip function
     `strip()`: removes the given character from both ends
     `lstrip()`: removes the given character from leading end/left(left end).
     `rstrip()`: removes the given character from trailing end/right(right end)
 
-    ### file Pointer
+ - ## file Pointer
 
 
 # Binary Files
+Using pickle module
+`import pickle`
+ - # Reading in the binary files
+   ```python
+   f = open('file2.dat','rb')
+   q  = pickle.load(b)
+   print(q)
+   f.close()
+   ```
+ - # Writing in the binary files
+    ```python
+    rec  = [sno,name,phoneno]
+    pickle.dump(rec,f)
+
+ # CSV Files
+   `import csv`
+   - # reading in the CSV file
+     ```
+     f = open('file.csv','r')
+     b = csv.reader(f,delimiter = ',')
+     print(next(b))
+     print(next(b))
+           # or
+     for i in b:
+         print(i)
+     
+     ```
 
 
