@@ -7,13 +7,18 @@
 3. click on `no just start my download`
 
 ## Setup
-1. setup type: `custom`
-2. select product:
+1. Setup Type: `custom`
+2. Select Product:
    - MySql server
    - MySql Shell 
    - Workbench
 3. Downloading will be completed
-
+4. Type and networking (under connectivity protocol)
+   - TCP/IP
+   - open windonw firewall port
+5. Account and Roles
+   - choose your password
+6.
 ```python
 import pymysql
 con = pymysql.connect(host = 'localhost', user = 'root', password = 'arunrockstar',database = 'l')
