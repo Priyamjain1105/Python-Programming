@@ -24,7 +24,26 @@
    - choose your password
 
 6. Configuration
-  - check all the things and finish
+   - check all the things and finish
+  
+7. connect workbench
+   - click + button
+   - username: root
+   - password: yourPassword
+   - Connection will be created
+
+# Procedure to connect with Python
+1. in terminal: `pip install mysql-connector-python`
+2. `import mysql.connector`
+3. ```python
+   mydb = mysql.connector.connect(
+           host = "localhost",
+           user = "root",
+           password = "your-password",
+           database = "<database-name>")
+   ```
+
+
 
 ```python
 import pymysql
