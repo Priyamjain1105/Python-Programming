@@ -20,4 +20,19 @@ win.mainloop()
 
  - **container** : Parent container container contains chile container
  - **Event drivin programming**: behaviour of widgets
- - 
+ - ### Important Widgets
+    - Button
+    - Canvas : to draw
+    - CheckBox
+    - Entry : to take text inputs
+    - Label: provides single line caption for other widgets
+    - Frame: used as a container widget to organise other widgets
+    - Menu Button: used to display menu in your application
+    - Menu: menu widgets used to provide option 
+    - Message:
+    - Radio Button:
+    - Text Box
+    - Scale: silder widget
+    - Scroll Bar: adds scrolling vabpalbility to the other widgets
+  
+    - Panedwindow ...
