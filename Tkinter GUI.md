@@ -7,9 +7,9 @@ Tkinter Used for creating Graphical user interfaces in python
 
 # Starting
 ```python
-import tkinter as tk
-win = tk Tk()
-win.title("Hello World")
-win.mainloop()
+import tkinter as tk     
+win = tk Tk()            # assign the variable, Tk function
+win.title("Hello World")  # creating title component
+win.mainloop()             
 ```
 - `Tk()`
