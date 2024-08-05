@@ -13,3 +13,9 @@ win.title("Hello World")  # creating title component
 win.mainloop()             
 ```
 - `Tk()`
+![image](https://github.com/user-attachments/assets/e2513d4d-c891-4b13-b2d5-40248de94920)
+![image](https://github.com/user-attachments/assets/7cf67b13-a835-4ee3-a36d-45798bc7a5b9)
+
+ - **container** : Parent container container contains chile container
+ - **Event drivin programming**: behaviour of widgets
+ - 
