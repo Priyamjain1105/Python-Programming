@@ -7,10 +7,10 @@ Tkinter Used for creating Graphical user interfaces in python
 
 # Starting
 ```python
-import tkinter as tk     
-win = tk Tk()            # assign the variable, Tk function
+import tkinter as tk    # alias name(short name) = tk 
+win = tk Tk()            # assign the variable, Tk function, creats the screen
 win.title("Hello World")  # creating title component
-win.mainloop()             
+win.mainloop()             # Important to write
 ```
 - `Tk()` function is used
 
@@ -34,5 +34,27 @@ win.mainloop()
     - Text Box
     - Scale: silder widget
     - Scroll Bar: adds scrolling vabpalbility to the other widgets
-  
+
+   ### Other Widgets
     - Panedwindow ...
+
+
+# Example
+```python
+  import tkinter as tk
+
+  root =  tk.Tk()
+  root.title("Tkinter Widget")
+
+  label = tk.Label(root, text = "welcome")
+  label.pack()
+
+  entry = tk.Entry(root)
+  entry.pack()
+
+  button = tk.Button(root, text = "Click Me")
+  button.pack()
+
+   root.mainloop()
+  
+```
