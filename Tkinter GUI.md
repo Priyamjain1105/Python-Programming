@@ -63,8 +63,13 @@ win.mainloop()             # Important to write
   - Arranges the component one by one (vertically or horizontally)
 
 ## `.grid()`
-  - using rows and coloumns
+  - format: rows and coloumns
+  - ```py
+    widget.grid(options)
+
+    ```
 ## `place()`
+   
   - put stuff anywhere using coordinates
 ![image](https://github.com/user-attachments/assets/aeb05a52-b5ce-4329-8888-9996e6094923)
 
