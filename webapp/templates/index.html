@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+
+{% block title %}DSA Notes{% endblock %}
+
+{% block head_content %}
+<style>
+    body {
+        background: #f4f7fa;
+        /* Light futuristic background */
+        color: #222;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .content-container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+        border-radius: 12px;
+        background: #ffffff;
+        box-shadow: 0 0 15px rgba(0, 180, 255, 0.3);
+    }
+
+    h1 {
+        text-align: center;
+        color: #0077ff;
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+        letter-spacing: 0.5px;
+    }
+
+    section {
+        margin-bottom: 30px;
+        padding: 20px;
+        border-left: 4px solid #0077ff;
+        background: #f9fcff;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    section:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0 15px rgba(0, 180, 255, 0.5);
+    }
+
+    h2 {
+        color: #0077ff;
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    h3 {
+        color: #009966;
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin: 8px 0;
+    }
+
+    ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color: #222;
+        padding: 10px 14px;
+        border-radius: 6px;
+        background: #eef7ff;
+        border: 1px solid #cce6ff;
+        transition: all 0.3s ease;
+        font-size: 1rem;
+    }
+
+    ul li a:hover {
+        background: #0077ff;
+        color: white;
+        box-shadow: 0 0 10px #0077ff;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="content-container">
+    <h1>My DSA Notes</h1>
+
+    <section>
+        <h2>Sorting</h2>
+        <ul>
+            <li><a href="/problems/bubble-sort">Bubble Sort</a></li>
+            <li><a href="/problems/selection-sort">Selection Sort</a></li>
+            <li><a href="/problems/insertion-sort">Insertion Sort</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Arrays</h2>
+        <h3>Easy</h3>
+        <ul>
+            <li><a href="/problems/array-problem-1">Array Problem 1</a></li>
+            <li><a href="/problems/array-problem-2">Array Problem 2</a></li>
+        </ul>
+        <h3>Medium</h3>
+        <ul>
+            <li><a href="/problems/array-problem-3">Array Problem 3</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Linked List</h2>
+        <ul>
+            <li><a href="/problems/reverse-linked-list">Reverse Linked List</a></li>
+            <li><a href="/problems/detect-cycle">Detect Cycle</a></li>
+        </ul>
+    </section>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Highlight clicked links (mark as active)
+    document.querySelectorAll("ul li a").forEach(link => {
+        link.addEventListener("click", () => {
+            document.querySelectorAll("ul li a").forEach(a => {
+                a.style.background = "#eef7ff";
+                a.style.color = "#222";
+            });
+            link.style.background = "#00cc88";
+            link.style.color = "white";
+        });
+    });
+</script>
+{% endblock %}
