@@ -1,5 +1,13 @@
-# Python Programming
+# Data-Structure and Algorithm
 
-## prerequiste
- - [OOPS](Object_oriented_programming)
- - [Strings](Basics/strings.ipynb)
+## Basics
+ - [Object Oriented Programming](Object_oriented_programming)
+ - [File Handlinig]()
+ - [MySQL]()
+ 
+
+### Sorting Algorithms
+  1. [Bubble Sort]()
+  2. [Selection Sort]()
+  3. [Insertion Sort]()
+  4. 
