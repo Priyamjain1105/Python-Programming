@@ -1,5 +1,5 @@
 ![Python](dsa_p.png)
-#### [My Leetcode Profile](https://leetcode.com/u/Priyamjain57/) ...
+#### [My Leetcode Profile](https://leetcode.com/u/Priyamjain57/)
 
 # Basics
 - ## Data-Structure
@@ -31,7 +31,3 @@
 | :---: | :---------------- | :----------------- |
 | 1.    | [File Handlinig]()|                    |
 | 2.    | [MySQL]()          |                   |
-<<<<<<< HEAD
-=======
- 
->>>>>>> b54734c97478e915aee9f0613ce41bb538d835a9
